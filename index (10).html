@@ -1,0 +1,298 @@
+<html>
+ <head>
+  <title>
+   On The Job Assessment
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .form-container {
+            transition: transform 0.5s, box-shadow 0.5s;
+            max-height: 90vh;
+            overflow-y: auto;
+        }
+        .form-container:hover {
+            transform: scale(1.02);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        select:invalid {
+            color: gray;
+        }
+  </style>
+ </head>
+ <body class="bg-gray-100 flex items-center justify-center min-h-screen">
+  <div class="form-container bg-white rounded-lg shadow-lg p-6 w-96">
+   <h1 class="text-2xl font-bold mb-6 text-center">
+    On The Job Assessment
+   </h1>
+   <form id="assessmentForm">
+    <div class="mb-4">
+     <label class="block text-gray-700 text-sm font-bold mb-2" for="tanggal-penilaian">
+      Tanggal Penilaian
+     </label>
+     <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="tanggal-penilaian" name="tanggal-penilaian" type="date" required/>
+    </div>
+    <div class="mb-4">
+     <label class="block text-gray-700 text-sm font-bold mb-2" for="dinilai-oleh">
+      Dinilai Oleh
+     </label>
+     <select class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="dinilai-oleh" name="dinilai-oleh" required>
+      <option value="" disabled selected>
+       Pilih Penilai
+      </option>
+      <option value="MD GT TEAM LEADER">
+       MD GT TEAM LEADER
+      </option>
+      <option value="KORMOT">
+       KORMOT
+      </option>
+     </select>
+    </div>
+    <div class="mb-4">
+     <label class="block text-gray-700 text-sm font-bold mb-2" for="devisi">
+      Devisi
+     </label>
+     <select class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="devisi" name="devisi" required>
+      <option value="" disabled selected>
+       Pilih Devisi
+      </option>
+      <option value="MD GT">
+       MD GT
+      </option>
+      <option value="TASK FORCE">
+       TASK FORCE
+      </option>
+      <option value="BONTEH">
+       BONTEH
+      </option>
+     </select>
+    </div>
+    <div class="mb-4">
+     <label class="block text-gray-700 text-sm font-bold mb-2" for="nama-dinilai">
+      Nama Dinilai
+     </label>
+     <select class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="nama-dinilai" name="nama-dinilai" required>
+      <option value="" disabled selected>
+       Pilih Nama
+      </option>
+      <option value="TFC01">
+       TFC01
+      </option>
+      <option value="TFB01">
+       TFB01
+      </option>
+      <option value="TFB02">
+       TFB02
+      </option>
+      <option value="TFO01">
+       TFO01
+      </option>
+      <option value="TFO02">
+       TFO02
+      </option>
+      <option value="TMTB01">
+       TMTB01
+      </option>
+      <option value="TMTB05">
+       TMTB05
+      </option>
+      <option value="TMTB06">
+       TMTB06
+      </option>
+      <option value="TMTB07">
+       TMTB07
+      </option>
+      <option value="TMTB08">
+       TMTB08
+      </option>
+      <option value="TMTB10">
+       TMTB10
+      </option>
+      <option value="TMTB11">
+       TMTB11
+      </option>
+     </select>
+    </div>
+    <h2 class="text-xl font-bold mb-4 text-left">
+     A. PENILAIAN PRA-KUNJUNGAN
+    </h2>
+    <div class="mb-4">
+     <label class="block text-gray-700 text-sm font-bold mb-2" for="briefing-pagi">
+      1. Menghadiri briefing pagi (minimal telpon untuk Taskforce di SP/FS)
+     </label>
+     <select class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="briefing-pagi" name="briefing-pagi" required>
+      <option value="" disabled selected>
+       Pilih Opsi
+      </option>
+      <option value="Yes">
+       Yes
+      </option>
+      <option value="No">
+       No
+      </option>
+      <option value="N/A">
+       N/A
+      </option>
+     </select>
+    </div>
+    <div class="mb-4">
+     <label class="block text-gray-700 text-sm font-bold mb-2" for="target-harian">
+      2. Pemahaman terhadap target harian in qty dan value
+     </label>
+     <select class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="target-harian" name="target-harian" required>
+      <option value="" disabled selected>
+       Pilih Opsi
+      </option>
+      <option value="Yes">
+       Yes
+      </option>
+      <option value="No">
+       No
+      </option>
+      <option value="N/A">
+       N/A
+      </option>
+     </select>
+    </div>
+    <div class="mb-4">
+     <label class="block text-gray-700 text-sm font-bold mb-2" for="target-noa">
+      3. Pemahaman terhadap target NOA
+     </label>
+     <select class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="target-noa" name="target-noa" required>
+      <option value="" disabled selected>
+       Pilih Opsi
+      </option>
+      <option value="Yes">
+       Yes
+      </option>
+      <option value="No">
+       No
+      </option>
+      <option value="N/A">
+       N/A
+      </option>
+     </select>
+    </div>
+    <div class="mb-4">
+     <label class="block text-gray-700 text-sm font-bold mb-2" for="handheld">
+      4. Menyiapkan handheld (setting android) / DKM Manual jika tidak ada handheld
+     </label>
+     <select class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="handheld" name="handheld" required>
+      <option value="" disabled selected>
+       Pilih Opsi
+      </option>
+      <option value="Yes">
+       Yes
+      </option>
+      <option value="No">
+       No
+      </option>
+      <option value="N/A">
+       N/A
+      </option>
+     </select>
+    </div>
+    <div class="mb-4">
+     <label class="block text-gray-700 text-sm font-bold mb-2" for="dokumen">
+      5. Menyiapkan dokumen (form pelanggan baru, DMP, form survey (jika ada))
+     </label>
+     <select class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="dokumen" name="dokumen" required>
+      <option value="" disabled selected>
+       Pilih Opsi
+      </option>
+      <option value="Yes">
+       Yes
+      </option>
+      <option value="No">
+       No
+      </option>
+      <option value="N/A">
+       N/A
+      </option>
+     </select>
+    </div>
+    <div class="mb-4">
+     <label class="block text-gray-700 text-sm font-bold mb-2" for="posm">
+      6. Menyiapkan POSM
+     </label>
+     <select class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="posm" name="posm" required>
+      <option value="" disabled selected>
+       Pilih Opsi
+      </option>
+      <option value="Yes">
+       Yes
+      </option>
+      <option value="No">
+       No
+      </option>
+      <option value="N/A">
+       N/A
+      </option>
+     </select>
+    </div>
+    <div class="mb-4">
+     <label class="block text-gray-700 text-sm font-bold mb-2" for="loading-barang">
+      7. Melakukan Loading barang jualan di gudang
+     </label>
+     <select class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="loading-barang" name="loading-barang" required>
+      <option value="" disabled selected>
+       Pilih Opsi
+      </option>
+      <option value="Yes">
+       Yes
+      </option>
+      <option value="No">
+       No
+      </option>
+      <option value="N/A">
+       N/A
+      </option>
+     </select>
+    </div>
+    <div class="flex items-center justify-between">
+     <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
+      Submit
+     </button>
+    </div>
+   </form>
+  </div>
+  <script>
+   document.getElementById('assessmentForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        
+        const tanggalPenilaian = document.getElementById('tanggal-penilaian').value;
+        
+        // Send data to server
+        fetch('https://your-server-endpoint.com/save', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                tanggalPenilaian: tanggalPenilaian
+            })
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log('Success:', data);
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+        });
+    });
+  </script>
+ </body>
+</html>
